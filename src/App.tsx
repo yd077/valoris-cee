@@ -130,16 +130,16 @@ export default function App() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.5, ease: [0.2, 0.65, 0.3, 0.9] }}
-            className="max-w-4xl mt-16 md:mt-0"
+            className="max-w-4xl mt-8 md:mt-0"
           >
-            <h2 className="text-[#81B93E] text-[10px] sm:text-xs md:text-sm tracking-[0.2em] md:tracking-[0.4em] uppercase mb-4 md:mb-8 font-bold">
+            <h2 className="text-[#81B93E] text-[10px] sm:text-xs md:text-sm tracking-[0.2em] md:tracking-[0.4em] uppercase mb-8 md:mb-8 font-bold">
               L'Excellence en Rénovation Énergétique
             </h2>
-            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-[1.1] mb-6 md:mb-8 drop-shadow-2xl">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-[1.2] mb-10 md:mb-8 drop-shadow-2xl">
               Valorisez votre transition <br className="hidden md:block" />
               énergétique
             </h1>
-            <p className="text-white/90 text-base sm:text-lg md:text-2xl font-medium max-w-3xl mx-auto mb-8 md:mb-12 tracking-wide leading-relaxed">
+            <p className="text-white/90 text-base sm:text-lg md:text-2xl font-medium max-w-3xl mx-auto mb-12 md:mb-12 tracking-wide leading-relaxed">
               Conseil, accompagnement et ingénierie financière pour les entreprises, collectivités et particuliers.
             </p>
             <motion.a
@@ -584,7 +584,12 @@ export default function App() {
                 <div className="text-[#81B93E] text-sm tracking-[0.2em] uppercase font-bold">Partenaire Auditeur</div>
               </div>
               
-              <h3 className="text-5xl md:text-6xl font-serif font-bold mb-6 tracking-wide">ENERGYZ</h3>
+              <img 
+                src="https://energyz.fr/wp-content/uploads/2026/03/Calque-0-200x91.webp" 
+                alt="ENERGYZ Logo" 
+                className="h-12 md:h-16 w-auto mb-6"
+                referrerPolicy="no-referrer"
+              />
               <p className="text-gray-300 font-medium leading-loose mb-10 text-xl">
                 Notre expert en performance énergétique, basé à Lyon, accompagnant les entreprises dans leur transition.
               </p>
