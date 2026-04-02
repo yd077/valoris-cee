@@ -112,12 +112,19 @@ export default function App() {
         <AnimatePresence initial={false}>
           <motion.div
             key={currentImageIndex}
-            initial={{ opacity: 0, scale: 1 }}
-            animate={{ opacity: 1, scale: 1.1 }}
+            initial={{ opacity: 0, scale: 1, x: 0, y: 0 }}
+            animate={{ 
+              opacity: 1, 
+              scale: currentImageIndex === 0 ? 1.15 : 1.05,
+              x: currentImageIndex === 0 ? "-2%" : "0%",
+              y: currentImageIndex === 0 ? "-1%" : "0%"
+            }}
             exit={{ opacity: 0 }}
             transition={{ 
               opacity: { duration: 2, ease: "easeInOut" },
-              scale: { duration: 12, ease: "linear" }
+              scale: { duration: 12, ease: "linear" },
+              x: { duration: 12, ease: "linear" },
+              y: { duration: 12, ease: "linear" }
             }}
             className="absolute inset-0"
           >
@@ -313,26 +320,26 @@ export default function App() {
            </motion.div>
            
            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer} className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <motion.div variants={fadeUp} className="group relative bg-white/5 p-10 lg:p-12 rounded-3xl border border-white/10 backdrop-blur-md hover:bg-white/10 hover:border-blue-400/50 transition-all duration-700 flex flex-col justify-between h-full overflow-hidden">
+              <motion.div variants={fadeUp} className="group relative bg-white/5 p-10 lg:p-12 rounded-3xl border border-white/10 backdrop-blur-md hover:bg-white/10 hover:border-blue-400/50 transition-all duration-700 flex flex-col justify-between items-center text-center h-full overflow-hidden">
                  <div className="absolute inset-0 bg-gradient-to-b from-blue-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                  <h3 className="text-3xl font-serif font-bold mb-10 relative z-10">Les Certificats d’économies d’énergie</h3>
-                 <a href="#contact" className="inline-flex items-center space-x-2 text-[#81B93E] font-bold uppercase tracking-widest text-sm hover:text-blue-300 transition-colors relative z-10 group-hover:translate-x-2 duration-300">
+                 <a href="#contact" className="inline-flex items-center justify-center space-x-2 text-[#81B93E] font-bold uppercase tracking-widest text-sm hover:text-blue-300 transition-colors relative z-10 group-hover:translate-x-2 duration-300 w-full">
                    <span>En bénéficier</span>
                    <ArrowRight size={16} />
                  </a>
               </motion.div>
-              <motion.div variants={fadeUp} className="group relative bg-white/5 p-10 lg:p-12 rounded-3xl border border-white/10 backdrop-blur-md hover:bg-white/10 hover:border-blue-400/50 transition-all duration-700 flex flex-col justify-between h-full overflow-hidden">
+              <motion.div variants={fadeUp} className="group relative bg-white/5 p-10 lg:p-12 rounded-3xl border border-white/10 backdrop-blur-md hover:bg-white/10 hover:border-blue-400/50 transition-all duration-700 flex flex-col justify-between items-center text-center h-full overflow-hidden">
                  <div className="absolute inset-0 bg-gradient-to-b from-blue-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                  <h3 className="text-3xl font-serif font-bold mb-10 relative z-10">Les aides publiques</h3>
-                 <a href="#contact" className="inline-flex items-center space-x-2 text-[#81B93E] font-bold uppercase tracking-widest text-sm hover:text-blue-300 transition-colors relative z-10 group-hover:translate-x-2 duration-300">
+                 <a href="#contact" className="inline-flex items-center justify-center space-x-2 text-[#81B93E] font-bold uppercase tracking-widest text-sm hover:text-blue-300 transition-colors relative z-10 group-hover:translate-x-2 duration-300 w-full">
                    <span>En bénéficier</span>
                    <ArrowRight size={16} />
                  </a>
               </motion.div>
-              <motion.div variants={fadeUp} className="group relative bg-white/5 p-10 lg:p-12 rounded-3xl border border-white/10 backdrop-blur-md hover:bg-white/10 hover:border-blue-400/50 transition-all duration-700 flex flex-col justify-between h-full overflow-hidden">
+              <motion.div variants={fadeUp} className="group relative bg-white/5 p-10 lg:p-12 rounded-3xl border border-white/10 backdrop-blur-md hover:bg-white/10 hover:border-blue-400/50 transition-all duration-700 flex flex-col justify-between items-center text-center h-full overflow-hidden">
                  <div className="absolute inset-0 bg-gradient-to-b from-blue-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                  <h3 className="text-3xl font-serif font-bold mb-10 relative z-10">Le tiers financement</h3>
-                 <a href="#contact" className="inline-flex items-center space-x-2 text-[#81B93E] font-bold uppercase tracking-widest text-sm hover:text-blue-300 transition-colors relative z-10 group-hover:translate-x-2 duration-300">
+                 <a href="#contact" className="inline-flex items-center justify-center space-x-2 text-[#81B93E] font-bold uppercase tracking-widest text-sm hover:text-blue-300 transition-colors relative z-10 group-hover:translate-x-2 duration-300 w-full">
                    <span>En bénéficier</span>
                    <ArrowRight size={16} />
                  </a>
@@ -342,11 +349,11 @@ export default function App() {
       </section>
 
       {/* Section Dédiée CEE */}
-      <section className="py-32 px-6 relative overflow-hidden bg-white border-t border-blue-50">
+      <section className="py-32 px-6 relative overflow-hidden bg-white border-t border-blue-50 text-center md:text-left">
          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-blue-50/60 via-white to-white pointer-events-none z-0"></div>
          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-100/20 rounded-full blur-[100px] pointer-events-none z-0"></div>
          
-         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16 relative z-10">
+         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-16 relative z-10">
            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp} className="w-full md:w-1/3 flex justify-center">
              <div className="relative group">
                <div className="absolute inset-0 bg-gradient-to-tr from-blue-400/20 to-[#81B93E]/20 blur-3xl rounded-full group-hover:scale-110 transition-transform duration-700"></div>
@@ -358,24 +365,24 @@ export default function App() {
                />
              </div>
            </motion.div>
-           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp} className="w-full md:w-2/3">
+           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp} className="w-full md:w-2/3 flex flex-col items-center md:items-start text-center md:text-left">
              <h2 className="text-4xl md:text-5xl font-serif font-bold leading-tight mb-6 text-[#121212]">
                Le dispositif des <br/>
                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-emerald-900)] to-blue-600">Certificats d’Économies d’Énergie (CEE)</span>
              </h2>
-             <div className="w-20 h-[3px] bg-gradient-to-r from-[#81B93E] to-blue-400 mb-8"></div>
+             <div className="w-20 h-[3px] bg-gradient-to-r from-[#81B93E] to-blue-400 mb-8 mx-auto md:mx-0"></div>
              <p className="text-gray-700 font-medium text-xl leading-relaxed mb-6">
                Créé en 2005, le <strong>dispositif des CEE</strong> est l'un des principaux instruments de la politique de <strong>maîtrise de la demande énergétique</strong> en France.
              </p>
              <p className="text-gray-700 font-medium text-xl leading-relaxed mb-8">
                Il repose sur une <strong>obligation de réalisation d’économies d’énergie</strong> imposée par les pouvoirs publics aux vendeurs d’énergie. En tant que consommateur ou entreprise, vous pouvez bénéficier de <strong>primes importantes</strong> pour <strong>financer vos travaux d'efficacité énergétique</strong>.
              </p>
-             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-8">
-               <a href="#contact" className="inline-flex items-center space-x-3 text-blue-600 font-bold uppercase tracking-widest text-sm hover:text-[#121212] transition-colors group">
+             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-8 w-full">
+               <a href="#contact" className="inline-flex items-center justify-center space-x-3 text-blue-600 font-bold uppercase tracking-widest text-sm hover:text-[#121212] transition-colors group">
                  <span>Évaluer mon éligibilité</span>
                  <ArrowRight size={16} strokeWidth={2} className="group-hover:translate-x-2 transition-transform" />
                </a>
-               <a href="tel:+33762909663" className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-[#81B93E] text-white px-8 py-4 rounded-full text-xs uppercase tracking-widest font-bold hover:shadow-[0_10px_30px_rgba(59,130,246,0.3)] hover:-translate-y-1 transition-all duration-300">
+               <a href="tel:+33762909663" className="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-[#81B93E] text-white px-8 py-4 rounded-full text-xs uppercase tracking-widest font-bold hover:shadow-[0_10px_30px_rgba(59,130,246,0.3)] hover:-translate-y-1 transition-all duration-300">
                  <Phone size={14} />
                  <span>+33 7 62 90 96 63</span>
                </a>
@@ -541,7 +548,7 @@ export default function App() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
-            className="grid grid-cols-1 md:grid-cols-4 gap-12 relative"
+            className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 lg:gap-12 relative"
           >
             {/* Connecting line for desktop */}
             <div className="hidden md:block absolute top-[48px] left-[12%] right-[12%] h-[2px] bg-gradient-to-r from-blue-100 via-[#81B93E]/50 to-blue-100 z-0"></div>
@@ -553,13 +560,22 @@ export default function App() {
               { num: "04", title: "Valorisation", desc: "Obtention et valorisation de vos certificats d'économies d'énergie." }
             ].map((step, index) => (
               <motion.div key={index} variants={fadeUp} className="relative z-10 flex flex-col items-center text-center group">
-                {/* Animated Arrow between steps (desktop only) */}
+                {/* Animated Arrow between steps (responsive) */}
                 {index < 3 && (
-                  <div className="hidden md:flex absolute top-[36px] -right-[2rem] translate-x-1/2 z-20 space-x-[-12px]">
-                    <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0 }}><ChevronRight className="text-blue-300" size={28} strokeWidth={2.5} /></motion.div>
-                    <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.2 }}><ChevronRight className="text-blue-400" size={28} strokeWidth={2.5} /></motion.div>
-                    <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.4 }}><ChevronRight className="text-[#81B93E]" size={28} strokeWidth={2.5} /></motion.div>
-                  </div>
+                  <>
+                    {/* Desktop Arrow */}
+                    <div className="hidden md:flex absolute top-[36px] -right-[1.5rem] lg:-right-[2rem] translate-x-1/2 z-20 space-x-[-8px] lg:space-x-[-12px]">
+                      <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0 }}><ChevronRight className="text-blue-300" size={24} strokeWidth={2.5} /></motion.div>
+                      <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.2 }}><ChevronRight className="text-blue-400" size={24} strokeWidth={2.5} /></motion.div>
+                      <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.4 }}><ChevronRight className="text-[#81B93E]" size={24} strokeWidth={2.5} /></motion.div>
+                    </div>
+                    {/* Mobile Arrow (Vertical) */}
+                    <div className="md:hidden flex flex-col items-center justify-center my-4 space-y-[-8px]">
+                      <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0 }}><ChevronRight className="text-blue-300 rotate-90" size={24} strokeWidth={2.5} /></motion.div>
+                      <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.2 }}><ChevronRight className="text-blue-400 rotate-90" size={24} strokeWidth={2.5} /></motion.div>
+                      <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.4 }}><ChevronRight className="text-[#81B93E] rotate-90" size={24} strokeWidth={2.5} /></motion.div>
+                    </div>
+                  </>
                 )}
                 
                 <div className="w-24 h-24 rounded-full bg-white border border-blue-100 shadow-[0_10px_30px_rgba(59,130,246,0.1)] flex items-center justify-center mb-8 group-hover:border-[#81B93E] group-hover:shadow-[0_10px_30px_rgba(129,185,62,0.2)] group-hover:scale-110 transition-all duration-500 relative z-10">
@@ -888,8 +904,8 @@ export default function App() {
       {/* Footer */}
       <footer className="bg-[#121212] text-white py-20 px-6 border-t border-white/10 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-blue-900/20 via-[#121212] to-[#121212] pointer-events-none z-0"></div>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 relative z-10">
-          <div className="col-span-1 md:col-span-2">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 relative z-10 text-center md:text-left">
+          <div className="col-span-1 md:col-span-2 flex flex-col items-center md:items-start">
             <img src="https://puredigiweb.fr/wp-content/uploads/2026/04/Gemini_Generated_Image_jhc5q6jhc5q6jhc5-Photoroom.png" alt="Valoris CEE Logo" className="h-36 md:h-48 w-auto mb-6" referrerPolicy="no-referrer" />
             <p className="text-gray-400 font-medium leading-relaxed max-w-md text-lg">
               L'excellence en rénovation énergétique. Conseil, accompagnement et ingénierie financière pour la transition écologique.
