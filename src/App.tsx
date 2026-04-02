@@ -8,10 +8,10 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ChevronRight, Leaf, Building2, LineChart, ShieldCheck, ArrowRight, Menu, X, Handshake, ThermometerSun, Zap, Wind, Sun, CheckCircle2, Factory, TrendingDown, CloudRain, Phone, Send, Mail, MapPin } from 'lucide-react';
 
 const HERO_IMAGES = [
-  "https://puredigiweb.fr/wp-content/uploads/2026/04/Gemini_Generated_Image_jswscmjswscmjsws-1.jpg",
-  "https://www.lemondedelenergie.com/wp-content/uploads/2017/02/transition_energetique_26.jpg",
+  "https://les-energies-vertes.fr/blog/wp-content/uploads/2026/03/Comprendre-la-transition-energetique-definition-et-enjeux-3.jpg",
   "https://media.lesechos.com/api/v1/images/view/68ca51f4e837165a8f0bcd74/1280x720/01503179314821-web-tete.jpg",
-  "https://les-energies-vertes.fr/blog/wp-content/uploads/2026/03/Comprendre-la-transition-energetique-definition-et-enjeux-3.jpg"
+  "https://www.lemondedelenergie.com/wp-content/uploads/2017/02/transition_energetique_26.jpg",
+  "https://puredigiweb.fr/wp-content/uploads/2026/04/Gemini_Generated_Image_jswscmjswscmjsws-1.jpg"
 ];
 
 const fadeUp = {
@@ -109,15 +109,15 @@ export default function App() {
 
       {/* Hero Section */}
       <header className="relative h-screen w-full overflow-hidden bg-black">
-        <AnimatePresence initial={false}>
+        <AnimatePresence>
           <motion.div
             key={currentImageIndex}
             initial={{ opacity: 0, scale: 1, x: 0, y: 0 }}
             animate={{ 
               opacity: 1, 
-              scale: currentImageIndex === 0 ? 1.15 : 1.05,
-              x: currentImageIndex === 0 ? "-2%" : "0%",
-              y: currentImageIndex === 0 ? "-1%" : "0%"
+              scale: 1.15,
+              x: currentImageIndex % 2 === 0 ? "-2%" : "2%",
+              y: currentImageIndex % 2 === 0 ? "-1%" : "1%"
             }}
             exit={{ opacity: 0 }}
             transition={{ 
