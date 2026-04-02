@@ -149,7 +149,7 @@ export default function App() {
             transition={{ duration: 1.2, delay: 0.5, ease: [0.2, 0.65, 0.3, 0.9] }}
             className="max-w-4xl mt-8 md:mt-0"
           >
-            <h2 className="text-[#81B93E] text-[10px] sm:text-xs md:text-sm tracking-[0.2em] md:tracking-[0.4em] uppercase mb-8 md:mb-8 font-bold">
+            <h2 className="text-[#81B93E] text-sm sm:text-base md:text-sm tracking-[0.2em] md:tracking-[0.4em] uppercase mb-8 md:mb-8 font-extrabold md:font-bold">
               L'Excellence en Rénovation Énergétique
             </h2>
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-[1.2] mb-10 md:mb-8 drop-shadow-2xl">
@@ -278,22 +278,22 @@ export default function App() {
               <img src="https://www.edater.fr/wp-content/uploads/2023/06/istock-1284339133-scaled.jpg" alt="Transition énergétique" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-emerald-900)]/60 to-transparent mix-blend-multiply"></div>
             </motion.div>
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp} className="bg-white/80 backdrop-blur-xl p-10 md:p-14 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-blue-50 relative overflow-hidden">
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp} className="bg-white/80 backdrop-blur-xl p-6 sm:p-10 md:p-14 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-blue-50 relative overflow-hidden">
                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-[#81B93E]"></div>
-               <p className="text-gray-700 font-medium text-xl leading-relaxed mb-8 relative z-10">
+               <p className="text-gray-700 font-medium text-lg sm:text-xl leading-relaxed mb-8 relative z-10 text-justify md:text-left">
                  Dans le cadre de la <strong>PPE (Programmation Pluriannuelle de l’Energie)</strong>, la France a précisé sa <strong>stratégie pour l’énergie et le climat</strong>.
                </p>
                
-               <div className="bg-gradient-to-r from-blue-50/50 to-white p-8 rounded-2xl border-l-4 border-[#81B93E] shadow-sm mb-8 relative z-10 group hover:shadow-md transition-all duration-300">
-                 <p className="text-[var(--color-emerald-900)] font-bold text-2xl leading-relaxed mb-4">
+               <div className="bg-gradient-to-r from-blue-50/50 to-white p-5 sm:p-8 rounded-2xl border-l-4 border-[#81B93E] shadow-sm mb-8 relative z-10 group hover:shadow-md transition-all duration-300">
+                 <p className="text-[var(--color-emerald-900)] font-bold text-xl sm:text-2xl leading-relaxed mb-4">
                    Objectif France : <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#81B93E] to-emerald-400">Neutralité carbone</span> à l’horizon 2050.
                  </p>
-                 <p className="text-blue-900 font-semibold text-lg leading-relaxed">
-                   Bénéficiez du <span className="bg-blue-100/50 px-3 py-1 rounded-md text-blue-900 uppercase tracking-wider font-bold mx-1 border border-blue-200 group-hover:bg-blue-100 transition-colors">Coup de pouce</span> pour accélérer votre transition et financer vos travaux d'efficacité énergétique !
+                 <p className="text-blue-900 font-semibold text-base sm:text-lg leading-relaxed">
+                   Bénéficiez du <span className="inline-block whitespace-nowrap bg-blue-100/50 px-2 sm:px-3 py-1 rounded-md text-blue-900 uppercase tracking-wider font-bold mx-1 my-1 border border-blue-200 group-hover:bg-blue-100 transition-colors text-sm sm:text-base">Coup de pouce</span> pour accélérer votre transition et financer vos travaux d'efficacité énergétique !
                  </p>
                </div>
 
-               <p className="text-gray-700 font-medium text-xl leading-relaxed relative z-10">
+               <p className="text-gray-700 font-medium text-lg sm:text-xl leading-relaxed relative z-10 text-justify md:text-left">
                  Pour aboutir à cet objectif ambitieux, mais néanmoins inéluctable, de <strong>réduction des émissions de gaz à effet de serre</strong>, il est nécessaire de <strong>réduire fortement les consommations d’énergie</strong>, en priorisant les plus carbonées.
                </p>
             </motion.div>
@@ -371,10 +371,10 @@ export default function App() {
                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-emerald-900)] to-blue-600">Certificats d’Économies d’Énergie (CEE)</span>
              </h2>
              <div className="w-20 h-[3px] bg-gradient-to-r from-[#81B93E] to-blue-400 mb-8 mx-auto md:mx-0"></div>
-             <p className="text-gray-700 font-medium text-xl leading-relaxed mb-6">
+             <p className="text-gray-700 font-medium text-xl leading-relaxed mb-6 text-justify md:text-left">
                Créé en 2005, le <strong>dispositif des CEE</strong> est l'un des principaux instruments de la politique de <strong>maîtrise de la demande énergétique</strong> en France.
              </p>
-             <p className="text-gray-700 font-medium text-xl leading-relaxed mb-8">
+             <p className="text-gray-700 font-medium text-xl leading-relaxed mb-8 text-justify md:text-left">
                Il repose sur une <strong>obligation de réalisation d’économies d’énergie</strong> imposée par les pouvoirs publics aux vendeurs d’énergie. En tant que consommateur ou entreprise, vous pouvez bénéficier de <strong>primes importantes</strong> pour <strong>financer vos travaux d'efficacité énergétique</strong>.
              </p>
              <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-8 w-full">
@@ -560,22 +560,13 @@ export default function App() {
               { num: "04", title: "Valorisation", desc: "Obtention et valorisation de vos certificats d'économies d'énergie." }
             ].map((step, index) => (
               <motion.div key={index} variants={fadeUp} className="relative z-10 flex flex-col items-center text-center group">
-                {/* Animated Arrow between steps (responsive) */}
+                {/* Desktop Arrow */}
                 {index < 3 && (
-                  <>
-                    {/* Desktop Arrow */}
-                    <div className="hidden md:flex absolute top-[36px] -right-[1.5rem] lg:-right-[2rem] translate-x-1/2 z-20 space-x-[-8px] lg:space-x-[-12px]">
-                      <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0 }}><ChevronRight className="text-blue-300" size={24} strokeWidth={2.5} /></motion.div>
-                      <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.2 }}><ChevronRight className="text-blue-400" size={24} strokeWidth={2.5} /></motion.div>
-                      <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.4 }}><ChevronRight className="text-[#81B93E]" size={24} strokeWidth={2.5} /></motion.div>
-                    </div>
-                    {/* Mobile Arrow (Vertical) */}
-                    <div className="md:hidden flex flex-col items-center justify-center my-4 space-y-[-8px]">
-                      <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0 }}><ChevronRight className="text-blue-300 rotate-90" size={24} strokeWidth={2.5} /></motion.div>
-                      <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.2 }}><ChevronRight className="text-blue-400 rotate-90" size={24} strokeWidth={2.5} /></motion.div>
-                      <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.4 }}><ChevronRight className="text-[#81B93E] rotate-90" size={24} strokeWidth={2.5} /></motion.div>
-                    </div>
-                  </>
+                  <div className="hidden md:flex absolute top-[36px] -right-[1.5rem] lg:-right-[2rem] translate-x-1/2 z-20 space-x-[-8px] lg:space-x-[-12px]">
+                    <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0 }}><ChevronRight className="text-blue-300" size={24} strokeWidth={2.5} /></motion.div>
+                    <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.2 }}><ChevronRight className="text-blue-400" size={24} strokeWidth={2.5} /></motion.div>
+                    <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.4 }}><ChevronRight className="text-[#81B93E]" size={24} strokeWidth={2.5} /></motion.div>
+                  </div>
                 )}
                 
                 <div className="w-24 h-24 rounded-full bg-white border border-blue-100 shadow-[0_10px_30px_rgba(59,130,246,0.1)] flex items-center justify-center mb-8 group-hover:border-[#81B93E] group-hover:shadow-[0_10px_30px_rgba(129,185,62,0.2)] group-hover:scale-110 transition-all duration-500 relative z-10">
@@ -586,6 +577,15 @@ export default function App() {
                 <p className="text-gray-600 font-medium text-base leading-relaxed px-2">
                   {step.desc}
                 </p>
+
+                {/* Mobile Arrow (Vertical) */}
+                {index < 3 && (
+                  <div className="md:hidden flex flex-col items-center justify-center mt-8 space-y-[-8px]">
+                    <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0 }}><ChevronRight className="text-blue-300 rotate-90" size={24} strokeWidth={2.5} /></motion.div>
+                    <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.2 }}><ChevronRight className="text-blue-400 rotate-90" size={24} strokeWidth={2.5} /></motion.div>
+                    <motion.div animate={{ opacity: [0.2, 1, 0.2] }} transition={{ duration: 1.5, repeat: Infinity, delay: 0.4 }}><ChevronRight className="text-[#81B93E] rotate-90" size={24} strokeWidth={2.5} /></motion.div>
+                  </div>
+                )}
               </motion.div>
             ))}
           </motion.div>
@@ -619,68 +619,68 @@ export default function App() {
             {/* Service 1 */}
             <motion.div variants={fadeUp} className="group relative bg-white p-10 md:p-14 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(59,130,246,0.1)] hover:-translate-y-2 transition-all duration-500 border border-blue-50 overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-[#81B93E] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }} className="mb-10 text-blue-500 group-hover:text-[#81B93E] group-hover:scale-110 transition-all duration-500 origin-left">
+              <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }} className="mb-10 text-blue-500 group-hover:text-[#81B93E] group-hover:scale-110 transition-all duration-500 origin-center flex justify-center">
                 <CheckCircle2 size={56} strokeWidth={1.5} />
               </motion.div>
-              <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-[#121212] group-hover:text-blue-600 transition-colors duration-500">Dispositif CEE</h3>
-              <p className="text-gray-700 font-medium leading-relaxed mb-10 text-lg">
+              <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-[#121212] group-hover:text-blue-600 transition-colors duration-500 text-center">Dispositif CEE</h3>
+              <p className="text-gray-700 font-medium leading-relaxed mb-10 text-lg text-center">
                 <strong>Assistance administrative, technique et financière complète</strong>. Nous gérons l'étude d'éligibilité, le montage, le suivi et la valorisation de vos dossiers de Certificats d'Économies d'Énergie.
               </p>
               <ul className="space-y-5 text-base text-gray-800 font-semibold tracking-wide">
-                <li className="flex items-center"><ArrowRight size={20} className="mr-4 text-[#81B93E]" strokeWidth={2} /> Étude d'éligibilité des opérations</li>
-                <li className="flex items-center"><ArrowRight size={20} className="mr-4 text-[#81B93E]" strokeWidth={2} /> Montage et gestion des dossiers</li>
-                <li className="flex items-center"><ArrowRight size={20} className="mr-4 text-[#81B93E]" strokeWidth={2} /> Valorisation pour le compte de tiers</li>
+                <li className="flex items-center justify-center text-center"><ArrowRight size={20} className="mr-3 text-[#81B93E] shrink-0" strokeWidth={2} /> <span>Étude d'éligibilité des opérations</span></li>
+                <li className="flex items-center justify-center text-center"><ArrowRight size={20} className="mr-3 text-[#81B93E] shrink-0" strokeWidth={2} /> <span>Montage et gestion des dossiers</span></li>
+                <li className="flex items-center justify-center text-center"><ArrowRight size={20} className="mr-3 text-[#81B93E] shrink-0" strokeWidth={2} /> <span>Valorisation pour le compte de tiers</span></li>
               </ul>
             </motion.div>
 
             {/* Service 2 */}
             <motion.div variants={fadeUp} className="group relative bg-white p-10 md:p-14 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(59,130,246,0.1)] hover:-translate-y-2 transition-all duration-500 border border-blue-50 overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-[#81B93E] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.2 }} className="mb-10 text-blue-500 group-hover:text-[#81B93E] group-hover:scale-110 transition-all duration-500 origin-left">
+              <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.2 }} className="mb-10 text-blue-500 group-hover:text-[#81B93E] group-hover:scale-110 transition-all duration-500 origin-center flex justify-center">
                 <LineChart size={56} strokeWidth={1.5} />
               </motion.div>
-              <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-[#121212] group-hover:text-blue-600 transition-colors duration-500">Négoce & Intermédiation</h3>
-              <p className="text-gray-700 font-medium leading-relaxed mb-10 text-lg">
+              <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-[#121212] group-hover:text-blue-600 transition-colors duration-500 text-center">Négoce & Intermédiation</h3>
+              <p className="text-gray-700 font-medium leading-relaxed mb-10 text-lg text-center">
                 En qualité de <strong>mandataire ou apporteur d'affaires</strong>, nous intervenons auprès des acteurs obligés et délégataires. Nous procédons également à <strong>l'achat, la vente et la gestion de CEE</strong>.
               </p>
               <ul className="space-y-5 text-base text-gray-800 font-semibold tracking-wide">
-                <li className="flex items-center"><ArrowRight size={20} className="mr-4 text-[#81B93E]" strokeWidth={2} /> Mandataire et intermédiaire</li>
-                <li className="flex items-center"><ArrowRight size={20} className="mr-4 text-[#81B93E]" strokeWidth={2} /> Achat et vente de certificats</li>
-                <li className="flex items-center"><ArrowRight size={20} className="mr-4 text-[#81B93E]" strokeWidth={2} /> Optimisation financière</li>
+                <li className="flex items-center justify-center text-center"><ArrowRight size={20} className="mr-3 text-[#81B93E] shrink-0" strokeWidth={2} /> <span>Mandataire et intermédiaire</span></li>
+                <li className="flex items-center justify-center text-center"><ArrowRight size={20} className="mr-3 text-[#81B93E] shrink-0" strokeWidth={2} /> <span>Achat et vente de certificats</span></li>
+                <li className="flex items-center justify-center text-center"><ArrowRight size={20} className="mr-3 text-[#81B93E] shrink-0" strokeWidth={2} /> <span>Optimisation financière</span></li>
               </ul>
             </motion.div>
 
             {/* Service 3 */}
             <motion.div variants={fadeUp} className="group relative bg-white p-10 md:p-14 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(59,130,246,0.1)] hover:-translate-y-2 transition-all duration-500 border border-blue-50 overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-[#81B93E] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.4 }} className="mb-10 text-blue-500 group-hover:text-[#81B93E] group-hover:scale-110 transition-all duration-500 origin-left">
+              <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.4 }} className="mb-10 text-blue-500 group-hover:text-[#81B93E] group-hover:scale-110 transition-all duration-500 origin-center flex justify-center">
                 <ThermometerSun size={56} strokeWidth={1.5} />
               </motion.div>
-              <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-[#121212] group-hover:text-blue-600 transition-colors duration-500">Conseil & Audits</h3>
-              <p className="text-gray-700 font-medium leading-relaxed mb-10 text-lg">
+              <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-[#121212] group-hover:text-blue-600 transition-colors duration-500 text-center">Conseil & Audits</h3>
+              <p className="text-gray-700 font-medium leading-relaxed mb-10 text-lg text-center">
                 Notre <strong>expertise technique</strong> au service de votre performance. Nous réalisons des <strong>prestations de conseil pointues</strong> pour optimiser votre efficacité énergétique.
               </p>
               <ul className="space-y-5 text-base text-gray-800 font-semibold tracking-wide">
-                <li className="flex items-center"><ArrowRight size={20} className="mr-4 text-[#81B93E]" strokeWidth={2} /> Conseil en efficacité énergétique</li>
-                <li className="flex items-center"><ArrowRight size={20} className="mr-4 text-[#81B93E]" strokeWidth={2} /> Audits énergétiques réglementaires</li>
-                <li className="flex items-center"><ArrowRight size={20} className="mr-4 text-[#81B93E]" strokeWidth={2} /> Études techniques approfondies</li>
+                <li className="flex items-center justify-center text-center"><ArrowRight size={20} className="mr-3 text-[#81B93E] shrink-0" strokeWidth={2} /> <span>Conseil en efficacité énergétique</span></li>
+                <li className="flex items-center justify-center text-center"><ArrowRight size={20} className="mr-3 text-[#81B93E] shrink-0" strokeWidth={2} /> <span>Audits énergétiques réglementaires</span></li>
+                <li className="flex items-center justify-center text-center"><ArrowRight size={20} className="mr-3 text-[#81B93E] shrink-0" strokeWidth={2} /> <span>Études techniques approfondies</span></li>
               </ul>
             </motion.div>
 
             {/* Service 4 */}
             <motion.div variants={fadeUp} className="group relative bg-white p-10 md:p-14 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(59,130,246,0.1)] hover:-translate-y-2 transition-all duration-500 border border-blue-50 overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-[#81B93E] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.6 }} className="mb-10 text-blue-500 group-hover:text-[#81B93E] group-hover:scale-110 transition-all duration-500 origin-left">
+              <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.6 }} className="mb-10 text-blue-500 group-hover:text-[#81B93E] group-hover:scale-110 transition-all duration-500 origin-center flex justify-center">
                 <Factory size={56} strokeWidth={1.5} />
               </motion.div>
-              <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-[#121212] group-hover:text-blue-600 transition-colors duration-500">Assistance à Maîtrise d'Ouvrage</h3>
-              <p className="text-gray-700 font-medium leading-relaxed mb-10 text-lg">
+              <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-[#121212] group-hover:text-blue-600 transition-colors duration-500 text-center">Assistance à Maîtrise d'Ouvrage</h3>
+              <p className="text-gray-700 font-medium leading-relaxed mb-10 text-lg text-center">
                 Un <strong>accompagnement sur-mesure</strong> pour <strong>sécuriser et mener à bien vos projets</strong> énergétiques, de la conception à la réalisation des travaux.
               </p>
               <ul className="space-y-5 text-base text-gray-800 font-semibold tracking-wide">
-                <li className="flex items-center"><ArrowRight size={20} className="mr-4 text-[#81B93E]" strokeWidth={2} /> AMO projets énergétiques</li>
-                <li className="flex items-center"><ArrowRight size={20} className="mr-4 text-[#81B93E]" strokeWidth={2} /> Mise en relation qualifiée</li>
-                <li className="flex items-center"><ArrowRight size={20} className="mr-4 text-[#81B93E]" strokeWidth={2} /> Coordination des acteurs</li>
+                <li className="flex items-center justify-center text-center"><ArrowRight size={20} className="mr-3 text-[#81B93E] shrink-0" strokeWidth={2} /> <span>AMO projets énergétiques</span></li>
+                <li className="flex items-center justify-center text-center"><ArrowRight size={20} className="mr-3 text-[#81B93E] shrink-0" strokeWidth={2} /> <span>Mise en relation qualifiée</span></li>
+                <li className="flex items-center justify-center text-center"><ArrowRight size={20} className="mr-3 text-[#81B93E] shrink-0" strokeWidth={2} /> <span>Coordination des acteurs</span></li>
               </ul>
             </motion.div>
 
@@ -732,7 +732,7 @@ export default function App() {
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <p className="text-gray-300 font-medium leading-loose mb-10 text-xl relative z-10">
+              <p className="text-gray-300 font-medium leading-loose mb-10 text-xl relative z-10 text-justify md:text-left">
                 Notre délégataire de confiance pour la valorisation de vos projets d'économies d'énergie.
               </p>
               
@@ -759,7 +759,7 @@ export default function App() {
                 className="h-12 md:h-16 w-auto mb-6 relative z-10"
                 referrerPolicy="no-referrer"
               />
-              <p className="text-gray-300 font-medium leading-loose mb-10 text-xl relative z-10">
+              <p className="text-gray-300 font-medium leading-loose mb-10 text-xl relative z-10 text-justify md:text-left">
                 Notre expert en performance énergétique, basé à Lyon, accompagnant les entreprises dans leur transition.
               </p>
               
@@ -800,7 +800,7 @@ export default function App() {
               className="lg:col-span-2 space-y-10"
             >
               <motion.div variants={fadeUp}>
-                <p className="text-gray-600 font-medium text-xl leading-relaxed mb-10">
+                <p className="text-gray-600 font-medium text-xl leading-relaxed mb-10 text-center md:text-left">
                   Notre équipe d'experts est à votre disposition pour vous accompagner dans la réussite de vos projets de transition énergétique. Nous vous répondons sous 24 heures.
                 </p>
               </motion.div>
@@ -907,7 +907,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 relative z-10 text-center md:text-left">
           <div className="col-span-1 md:col-span-2 flex flex-col items-center md:items-start">
             <img src="https://puredigiweb.fr/wp-content/uploads/2026/04/Gemini_Generated_Image_jhc5q6jhc5q6jhc5-Photoroom.png" alt="Valoris CEE Logo" className="h-36 md:h-48 w-auto mb-6" referrerPolicy="no-referrer" />
-            <p className="text-gray-400 font-medium leading-relaxed max-w-md text-lg">
+            <p className="text-gray-400 font-bold md:font-medium leading-relaxed max-w-md text-xl md:text-lg text-justify md:text-left">
               L'excellence en rénovation énergétique. Conseil, accompagnement et ingénierie financière pour la transition écologique.
             </p>
           </div>
