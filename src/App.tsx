@@ -715,11 +715,11 @@ export default function App() {
             className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12"
           >
             {/* DDER */}
-            <motion.div variants={fadeUp} className="group relative bg-[#1A1A1A] border border-white/10 p-10 md:p-14 hover:border-blue-500/50 transition-all duration-700 overflow-hidden rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_50px_rgba(59,130,246,0.15)]">
+            <motion.div variants={fadeUp} className="group relative bg-[#1A1A1A] border border-white/10 p-10 md:p-14 hover:border-blue-500/50 transition-all duration-700 overflow-hidden rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_50px_rgba(59,130,246,0.15)] text-center md:text-left">
               <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 transform -translate-x-full group-hover:translate-x-0"></div>
               <div className="absolute inset-0 bg-blue-500/5 blur-3xl rounded-full group-hover:bg-blue-500/10 transition-colors duration-700 pointer-events-none"></div>
               
-              <div className="flex items-center space-x-4 mb-8 relative z-10">
+              <div className="flex items-center justify-center md:justify-start space-x-4 mb-8 relative z-10">
                 <Handshake className="text-blue-400 group-hover:text-blue-300 transition-colors duration-500" size={40} strokeWidth={1.5} />
                 <div className="text-blue-400 text-sm tracking-[0.2em] uppercase font-bold group-hover:text-blue-300 transition-colors duration-500">Partenariat Exclusif</div>
               </div>
@@ -728,11 +728,11 @@ export default function App() {
                 <img 
                   src="https://dder.fr/wp-content/uploads/2018/05/logo-header-retina.png" 
                   alt="DDER Logo" 
-                  className="h-10 md:h-12 w-auto"
+                  className="h-10 md:h-12 w-auto mx-auto md:mx-0"
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <p className="text-gray-300 font-medium leading-loose mb-10 text-xl relative z-10 text-justify md:text-left">
+              <p className="text-gray-300 font-medium leading-loose mb-10 text-xl relative z-10 text-center md:text-left">
                 Notre délégataire de confiance pour la valorisation de vos projets d'économies d'énergie.
               </p>
               
@@ -744,11 +744,11 @@ export default function App() {
             </motion.div>
 
             {/* ENERGYZ */}
-            <motion.div variants={fadeUp} className="group relative bg-[#1A1A1A] border border-white/10 p-10 md:p-14 hover:border-[#81B93E]/50 transition-all duration-700 overflow-hidden rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_50px_rgba(129,185,62,0.15)]">
+            <motion.div variants={fadeUp} className="group relative bg-[#1A1A1A] border border-white/10 p-10 md:p-14 hover:border-[#81B93E]/50 transition-all duration-700 overflow-hidden rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_50px_rgba(129,185,62,0.15)] text-center md:text-left">
               <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-[#81B93E] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 transform -translate-x-full group-hover:translate-x-0"></div>
               <div className="absolute inset-0 bg-[#81B93E]/5 blur-3xl rounded-full group-hover:bg-[#81B93E]/10 transition-colors duration-700 pointer-events-none"></div>
               
-              <div className="flex items-center space-x-4 mb-8 relative z-10">
+              <div className="flex items-center justify-center md:justify-start space-x-4 mb-8 relative z-10">
                 <Handshake className="text-[#81B93E] group-hover:text-[#92d147] transition-colors duration-500" size={40} strokeWidth={1.5} />
                 <div className="text-[#81B93E] text-sm tracking-[0.2em] uppercase font-bold group-hover:text-[#92d147] transition-colors duration-500">Partenaire Auditeur</div>
               </div>
@@ -756,10 +756,10 @@ export default function App() {
               <img 
                 src="https://energyz.fr/wp-content/uploads/2026/03/Calque-0-200x91.webp" 
                 alt="ENERGYZ Logo" 
-                className="h-12 md:h-16 w-auto mb-6 relative z-10"
+                className="h-12 md:h-16 w-auto mb-6 relative z-10 mx-auto md:mx-0"
                 referrerPolicy="no-referrer"
               />
-              <p className="text-gray-300 font-medium leading-loose mb-10 text-xl relative z-10 text-justify md:text-left">
+              <p className="text-gray-300 font-medium leading-loose mb-10 text-xl relative z-10 text-center md:text-left">
                 Notre expert en performance énergétique, basé à Lyon, accompagnant les entreprises dans leur transition.
               </p>
               
@@ -907,7 +907,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 relative z-10 text-center md:text-left">
           <div className="col-span-1 md:col-span-2 flex flex-col items-center md:items-start">
             <img src="https://puredigiweb.fr/wp-content/uploads/2026/04/Gemini_Generated_Image_jhc5q6jhc5q6jhc5-Photoroom.png" alt="Valoris CEE Logo" className="h-36 md:h-48 w-auto mb-6" referrerPolicy="no-referrer" />
-            <p className="text-gray-400 font-bold md:font-medium leading-relaxed max-w-md text-xl md:text-lg text-justify md:text-left">
+            <p className="text-gray-400 font-bold md:font-medium leading-relaxed max-w-md text-xl md:text-lg text-center md:text-left">
               L'excellence en rénovation énergétique. Conseil, accompagnement et ingénierie financière pour la transition écologique.
             </p>
           </div>
