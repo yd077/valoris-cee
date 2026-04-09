@@ -55,7 +55,7 @@ export default function App() {
           <div className="flex items-center">
             <img 
               src="https://puredigiweb.fr/wp-content/uploads/2026/04/Gemini_Generated_Image_jhc5q6jhc5q6jhc5-Photoroom.png" 
-              alt="Valoris CEE Logo" 
+              alt="Valoris Energy Logo" 
               className="h-20 md:h-24 w-auto transition-all duration-500" 
               referrerPolicy="no-referrer" 
             />
@@ -68,9 +68,9 @@ export default function App() {
             <a href="#services" className="hover:text-[#81B93E] transition-colors">Services</a>
             <a href="#partenaires" className="hover:text-[#81B93E] transition-colors">Partenaires</a>
             <a href="#contact" className="hover:text-[#81B93E] transition-colors">Contact</a>
-            <a href="tel:+33762909663" className="flex items-center space-x-2 bg-[#81B93E] text-white px-4 py-2 rounded-full hover:bg-[#121212] transition-colors">
+            <a href="tel:0458280324" className="flex items-center space-x-2 bg-[#81B93E] text-white px-4 py-2 rounded-full hover:bg-[#121212] transition-colors">
               <Phone size={14} />
-              <span>+33 7 62 90 96 63</span>
+              <span>04 58 28 03 24</span>
             </a>
           </div>
 
@@ -99,9 +99,9 @@ export default function App() {
             <a href="#services" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-serif font-bold text-[#121212] hover:text-[#81B93E] transition-colors">Services</a>
             <a href="#partenaires" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-serif font-bold text-[#121212] hover:text-[#81B93E] transition-colors">Partenaires</a>
             <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-serif font-bold text-[#121212] hover:text-[#81B93E] transition-colors">Contact</a>
-            <a href="tel:+33762909663" className="inline-flex items-center justify-center space-x-3 bg-[#81B93E] text-white px-8 py-4 rounded-full text-lg font-bold mt-4">
+            <a href="tel:0458280324" className="inline-flex items-center justify-center space-x-3 bg-[#81B93E] text-white px-8 py-4 rounded-full text-lg font-bold mt-4">
               <Phone size={20} />
-              <span>+33 7 62 90 96 63</span>
+              <span>04 58 28 03 24</span>
             </a>
           </motion.div>
         )}
@@ -170,13 +170,13 @@ export default function App() {
                 <ChevronRight size={16} strokeWidth={1.5} />
               </motion.a>
               <motion.a
-                href="tel:+33762909663"
+                href="tel:0458280324"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="inline-flex items-center space-x-3 md:space-x-4 bg-[#81B93E] text-white px-6 py-3 md:px-10 md:py-5 rounded-full text-xs md:text-sm uppercase tracking-[0.1em] md:tracking-[0.2em] font-bold hover:bg-white hover:text-[#121212] transition-all duration-500 shadow-lg"
               >
                 <Phone size={16} strokeWidth={2} />
-                <span>+33 7 62 90 96 63</span>
+                <span>04 58 28 03 24</span>
               </motion.a>
             </div>
           </motion.div>
@@ -201,9 +201,9 @@ export default function App() {
               <a href="#contact" className="inline-block bg-gradient-to-r from-blue-600 to-[#81B93E] text-white px-10 py-4 rounded-full text-sm uppercase tracking-[0.2em] font-bold hover:shadow-[0_10px_30px_rgba(59,130,246,0.3)] hover:-translate-y-1 transition-all duration-500">
                 On se lance ?
               </a>
-              <a href="tel:+33762909663" className="inline-flex items-center space-x-3 bg-[#81B93E] text-white px-10 py-4 rounded-full text-sm uppercase tracking-[0.2em] font-bold hover:bg-[#121212] hover:-translate-y-1 transition-all duration-500 shadow-lg hover:shadow-xl">
+              <a href="tel:0458280324" className="inline-flex items-center space-x-3 bg-[#81B93E] text-white px-10 py-4 rounded-full text-sm uppercase tracking-[0.2em] font-bold hover:bg-[#121212] hover:-translate-y-1 transition-all duration-500 shadow-lg hover:shadow-xl">
                 <Phone size={18} />
-                <span>+33 7 62 90 96 63</span>
+                <span>04 58 28 03 24</span>
               </a>
             </div>
           </motion.div>
@@ -382,9 +382,9 @@ export default function App() {
                  <span>Évaluer mon éligibilité</span>
                  <ArrowRight size={16} strokeWidth={2} className="group-hover:translate-x-2 transition-transform" />
                </a>
-               <a href="tel:+33762909663" className="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-[#81B93E] text-white px-8 py-4 rounded-full text-xs uppercase tracking-widest font-bold hover:shadow-[0_10px_30px_rgba(59,130,246,0.3)] hover:-translate-y-1 transition-all duration-300">
+               <a href="tel:0458280324" className="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-[#81B93E] text-white px-8 py-4 rounded-full text-xs uppercase tracking-widest font-bold hover:shadow-[0_10px_30px_rgba(59,130,246,0.3)] hover:-translate-y-1 transition-all duration-300">
                  <Phone size={14} />
-                 <span>+33 7 62 90 96 63</span>
+                 <span>04 58 28 03 24</span>
                </a>
              </div>
            </motion.div>
@@ -432,9 +432,9 @@ export default function App() {
                <a href="#contact" className="inline-block bg-[#121212] text-white px-12 py-5 rounded-full text-sm uppercase tracking-[0.2em] font-bold hover:bg-blue-600 hover:-translate-y-1 transition-all duration-500 shadow-xl">
                  Contactez-nous
                </a>
-               <a href="tel:+33762909663" className="inline-flex items-center space-x-3 bg-gradient-to-r from-blue-600 to-[#81B93E] text-white px-12 py-5 rounded-full text-sm uppercase tracking-[0.2em] font-bold hover:shadow-[0_10px_30px_rgba(59,130,246,0.3)] hover:-translate-y-1 transition-all duration-500 shadow-xl">
+               <a href="tel:0458280324" className="inline-flex items-center space-x-3 bg-gradient-to-r from-blue-600 to-[#81B93E] text-white px-12 py-5 rounded-full text-sm uppercase tracking-[0.2em] font-bold hover:shadow-[0_10px_30px_rgba(59,130,246,0.3)] hover:-translate-y-1 transition-all duration-500 shadow-xl">
                  <Phone size={18} />
-                 <span>+33 7 62 90 96 63</span>
+                 <span>04 58 28 03 24</span>
                </a>
              </div>
            </motion.div>
@@ -753,12 +753,7 @@ export default function App() {
                 <div className="text-[#81B93E] text-sm tracking-[0.2em] uppercase font-bold group-hover:text-[#92d147] transition-colors duration-500">Partenaire Auditeur</div>
               </div>
               
-              <img 
-                src="https://energyz.fr/wp-content/uploads/2026/03/Calque-0-200x91.webp" 
-                alt="ENERGYZ Logo" 
-                className="h-12 md:h-16 w-auto mb-6 relative z-10 mx-auto md:mx-0"
-                referrerPolicy="no-referrer"
-              />
+              <Leaf className="h-12 md:h-16 w-auto mb-6 relative z-10 mx-auto md:mx-0 text-[#81B93E]" />
               <p className="text-gray-300 font-medium leading-loose mb-10 text-xl relative z-10 text-center md:text-left">
                 Notre expert en performance énergétique, basé à Lyon, accompagnant les entreprises dans leur transition.
               </p>
@@ -811,8 +806,8 @@ export default function App() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold tracking-widest uppercase text-gray-400 mb-2">Téléphone</h4>
-                  <a href="tel:+33762909663" className="text-2xl font-serif font-bold text-[#121212] hover:text-blue-600 transition-colors">
-                    +33 7 62 90 96 63
+                  <a href="tel:0458280324" className="text-2xl font-serif font-bold text-[#121212] hover:text-blue-600 transition-colors">
+                    04 58 28 03 24
                   </a>
                 </div>
               </motion.div>
@@ -823,7 +818,7 @@ export default function App() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold tracking-widest uppercase text-gray-400 mb-2">Email</h4>
-                  <a href="mailto:contact@valoriscee.com" className="text-xl font-medium text-[#121212] hover:text-[#81B93E] transition-colors">
+                  <a href="mailto:contact@valoris-energy.fr" className="text-xl font-medium text-[#121212] hover:text-[#81B93E] transition-colors">
                     contact@valoriscee.com
                   </a>
                 </div>
@@ -871,7 +866,7 @@ export default function App() {
                   </div>
                   <div className="space-y-3">
                     <label htmlFor="phone" className="text-sm font-bold uppercase tracking-wider text-gray-500">Téléphone</label>
-                    <input type="tel" id="phone" className="w-full bg-gray-50 border border-gray-200 rounded-xl px-6 py-4 text-[#121212] focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 transition-all duration-300" placeholder="+33 6 12 34 56 78" />
+                    <input type="tel" id="phone" className="w-full bg-gray-50 border border-gray-200 rounded-xl px-6 py-4 text-[#121212] focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 transition-all duration-300" placeholder="04 58 28 03 24" />
                   </div>
                 </div>
 
